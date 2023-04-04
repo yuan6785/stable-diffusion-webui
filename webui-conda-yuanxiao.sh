@@ -122,6 +122,7 @@ cd "${install_dir}"/"${clone_dir}"/ || { printf "\e[1m\e[31mERROR: Can't cd to %
 # fi
 
 # need yx create conda env ： conda create --name sd_python310 python=3.10
+source ~/.bashrc
 conda activate sd_python310
 
 if [[ ! -z "${ACCELERATE}" ]] && [ ${ACCELERATE}="True" ] && [ -x "$(command -v accelerate)" ]
