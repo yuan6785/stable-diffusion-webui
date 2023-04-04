@@ -98,7 +98,7 @@ else
     printf "Clone stable-diffusion-webui"
     printf "\n%s\n" "${delimiter}"
     "${GIT}" clone https://github.com/yuan6785/stable-diffusion-webui "${clone_dir}"
-    cd "${clone_dir}"/ && git checkout 7ed55943bf904b842ee0847a0118ad94e25deb06 || { printf "\e[1m\e[31mERROR: Can't cd to %s/%s/, aborting...\e[0m" "${install_dir}" "${clone_dir}"; exit 1; }
+    cd "${clone_dir}"/ && git checkout 39bf8e1ad4e9ba35f7848bd1e8974292a9460025 || { printf "\e[1m\e[31mERROR: Can't cd to %s/%s/, aborting...\e[0m" "${install_dir}" "${clone_dir}"; exit 1; }
 fi
 
 printf "\n%s\n" "${delimiter}"
